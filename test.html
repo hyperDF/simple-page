@@ -5,10 +5,16 @@
             addEventListener('DOMContentLoaded',init)
             function init() {
                 console.log('init started');
+                let add_button = document.getElementById('add_button');
+                add_button.addEventListener('click',handleAdd);
+            }
+            function handleAdd() {
+                console.log('handleAdd called');
             }
         </script>
     </head>
     <body>
         <h1>Simple Page</h1>
+        <button id="add_button">Add</button>
     </body>
 </html>
