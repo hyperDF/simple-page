@@ -10,11 +10,20 @@
             }
             function handleAdd() {
                 console.log('handleAdd called');
+                let num1_text = document.getElementById('num1');
+                let num2_text = document.getElementById('num2');
+                let num1 = Number(num1_text.value);
+                let num2 = Number(num2_text.value);
+                let result_text = document.getElementById('result');
+                result_text.value = num1 + num2;
             }
         </script>
     </head>
     <body>
         <h1>Simple Page</h1>
-        <button id="add_button">Add</button>
+        num1 <input type="text" id="num1">
+        num2 <input type="text" id="num2">
+        <button id="add_button">Add</button><br><br>
+        result <input type="text" id="result">
     </body>
 </html>
